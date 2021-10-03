@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    static void usAlama(int a, int b) {
+        int result = 1;
+        if (b == 0) {
+            result = 1;
+            System.out.println(result);
+        } else {
+            for (int i = 0; i < b; i++) {
+                result *= a;
+            }
+            System.out.println(result);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Taban sayısını giriniz\t: ");
+        int taban = scanner.nextInt();
+        System.out.print("Üs sayısını giriniz\t: ");
+        int us = scanner.nextInt();
+        usAlama(taban, us);
+    }
+}
